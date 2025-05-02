@@ -1,7 +1,7 @@
 import {FC} from "react";
 import ICourse from "../models/courses.tsx";
 
-type MyComponentsType = {arrays: ICourse};
+type MyComponentsType = {arrays: ICourse[]};
 
 const MyComponents: FC <MyComponentsType> = ({arrays}): Element=> {
     return (
@@ -9,11 +9,11 @@ const MyComponents: FC <MyComponentsType> = ({arrays}): Element=> {
                 {
                         arrays.map((value, index)=>{
                             return(
-                            <p className='text-3xl font-bold underline'>
-                                value.index value.title . value.mounth
-                            </p>
+                                <p className='text-3xl font-bold underline'>
+                                    key = {index} {value.title} . {value.monthDuration}
+                                </p>
 
-                                )
+                            )
                         })
 
                 }
