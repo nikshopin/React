@@ -1,12 +1,17 @@
 import {FC} from "react";
+import ICourse from "../models/courses.tsx";
 
-type MyComponentsType = {text: string};
+type MyComponentsType = {arrays: ICourse};
 
-const MyComponents: FC <MyComponentsType> = ({text})=> {
+const MyComponents: FC <MyComponentsType> = ({arrays}): Element=> {
     return (
-        <div className='text-3xl font-bold underline'>
-            {text}
-        </div>
+            {
+                arrays.map((value)=>{
+                    <div className='text-3xl font-bold underline'>
+                        value.title
+                    </div>
+                })
+            }
     )
 }
 
