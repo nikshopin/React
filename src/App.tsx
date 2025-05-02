@@ -1,10 +1,13 @@
 import './App.css'
-import MyComponents from './components/MyComponents'
+import ComponentCourses from "./components/ComponentCourses/ComponentCourses.tsx";
+import {coursesArray} from "./data/array.tsx";
+
+
 function App() {
 
   return (
     <>
-        <MyComponents text={ 'Hello World'}/>
+        <ComponentCourses courses={coursesArray}/>
     </>
   )
 }
