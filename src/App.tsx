@@ -1,10 +1,10 @@
 import './App.css'
-import MyComponents from './components/MyComponents'
+import FamilyComponent from "./components/FamilyComponent.tsx";
 function App() {
 
   return (
     <>
-        <MyComponents text={ 'Hello World'}/>
+        <FamilyComponent/>
     </>
   )
 }
