@@ -1,10 +1,10 @@
 import './App.css'
-import MyComponents from './components/MyComponents'
+import GetCommentsComponent from "./components/GetCommentsComponent/GetCommentsComponent.tsx";
 function App() {
 
   return (
     <>
-        <MyComponents text={ 'Hello World'}/>
+        <GetCommentsComponent/>
     </>
   )
 }
