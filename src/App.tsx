@@ -1,10 +1,10 @@
 import './App.css'
-import MyComponents from './components/MyComponents'
+import TodoComponents from './components/TodoComponents/TodoComponents.tsx'
 function App() {
 
   return (
     <>
-        <MyComponents text={ 'Hello World'}/>
+        <TodoComponents/>
     </>
   )
 }
