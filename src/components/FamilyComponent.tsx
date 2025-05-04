@@ -7,7 +7,7 @@ const FamilyComponent: FC   = () => {
         <div>
             {
                 simpsons.map((value, index)=> <CharacterComponent family = {value} key = {index}>
-                        {value.photo}
+                        {value.info}
                     </CharacterComponent>)
             }
         </div>
