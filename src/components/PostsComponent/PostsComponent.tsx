@@ -7,13 +7,13 @@ const PostsComponent = () => {
     const [posts, setPosts] = useState<IPost[]|null> (null );
 
     useEffect(()=>{
-        ApiRequest(import.meta.env.VIAT_BASE_URL_API).then((response)=> {
+        ApiRequest(import.meta.env.VITE_BASE_URL_API).then((response)=> {
             setPosts(response)
         });
     },[]);
     console.log(posts);
     return (
-        <div>
+        <div className="flex flex-col gap-2 m-auto w-150 jys-center items-center">
             {
                 posts && posts.map((item)=>(
                     <PostComponent key = {item.id} post = {item}/>

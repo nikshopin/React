@@ -7,8 +7,8 @@ type postComponentProps = {
 
 const PostComponent: FC<postComponentProps> = ({post}) => {
     return (
-        <div>
-            <h3>{post.title}</h3>
+        <div className='border p-5'>
+            <h3 className='font-bold'>{post.title}</h3>
             <p>{post.userId}</p>
             <p>{post.body}</p>
             <></>
