@@ -8,14 +8,16 @@ const GetCommentsComponent = () => {
 
     useEffect(() => {
         commentsResponse(import.meta.env.VITE_BASE_URL_COMPONENTS).then((response: IComment[]) => {
-            setComments(response)
+            setComments(response);
         })
-    })
+    },[])
+
+
     return (
         <div className='flex flex-col m-auto justify-center items-center w-150'>
             {
-                comments && comments.map((item: IComment) => (
-                    <GetCommentComponent item = {item}/>
+                comments && comments.map((item: IComment , index) => (
+                    <GetCommentComponent key = {index} item = {item}/>
                 ))
             }
         </div>
