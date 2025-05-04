@@ -9,14 +9,14 @@ const TodoComponents = () => {
         GetTodoList().then(response =>{
             setTodo(response);
         })
-    })
+    }, [])
 
     return (
         <div className='m-auto flex-col justify-center items-center w-150'>
             {
 
-                    todo && todo.map((item )=>(
-                        <TodoComponent item={item}/>
+                    todo && todo.map((item, index  )=>(
+                        <TodoComponent key={index} item={item}/>
                     ))
             }
         </div>

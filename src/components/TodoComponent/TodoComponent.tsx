@@ -7,7 +7,7 @@ type TodoComponentProps = {
 
 const TodoComponent: FC<TodoComponentProps> = ({item}) => {
     return (
-        <div key = {item.id} className='border p-10 w-full flex flex-col  items-center'>
+        <div className='border p-10 w-full flex flex-col  items-center'>
                 <h2 className='text-2xl bold'>{item.title}</h2>
                 <p>task user - {item.userId}</p>
                 <p>status - {item.completed ? 'completed' : 'in process'}</p>
