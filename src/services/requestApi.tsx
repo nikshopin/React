@@ -1,6 +1,6 @@
-import {IComment} from "../models/comments.tsx";
+import { IComments} from "../models/comments.tsx";
 
-export const commentsResponse =async (url:string): Promise<IComment[]>=>{
+export const commentsResponse =async (url:string): Promise<IComments>=>{
     return await fetch(url)
      .then(response=>response.json());
 }

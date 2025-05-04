@@ -11,3 +11,7 @@ export interface IComment {
   likes: number;
   user: User;
 }
+
+export interface IComments {
+  comments: IComment[];
+}
