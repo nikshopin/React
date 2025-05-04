@@ -7,7 +7,7 @@ const PostsComponent = () => {
     const [posts, setPosts] = useState<IPost[]|null> (null );
 
     useEffect(()=>{
-        ApiRequest(import.meta.env.VIAT_BASE_URL_API).then((response: IPost[])=> {
+        ApiRequest(import.meta.env.VIAT_BASE_URL_API).then((response)=> {
             setPosts(response)
         });
     },[]);
