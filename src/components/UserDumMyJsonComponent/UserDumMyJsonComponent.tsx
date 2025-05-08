@@ -12,7 +12,7 @@ type UserDumMyJsonComponentProps = {
 const UserDumMyJsonComponent: FC<UserDumMyJsonComponentProps> = ({item}) => {
     const navigateTo = useNavigate();
     const hendelOnClick = () => {
-        navigateTo( '' ,{state: item})
+        navigateTo( '/user/cart/'+item.id ,{state: item})
     }
     return (
         <div className={'flex flex-row justify-between p-5'}>
